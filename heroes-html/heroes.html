@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="styles/heroes-styles.css" />
         <title>Superheroes</title>
+        <script>
+             function changeStyle () {
+                console.log("testing exec of changeStyle");
+                document.getElementById('special-header').className='changed-style';
+            }
+        </script>
     </head>
     <body>
         <table>
             <tr>
-                <th>Alias</th>
+                <th id="special-header" onclick="changesStyle()">Alias</th>
                 <th>Name</th>
                 <th>Superpower</th>
             </tr>
